@@ -40,27 +40,28 @@ public class Hook extends BaseUtil{
         * */
         String emulatorName = "Device Name";
         String appName = "appName.apk";
+        String intendedActivity = "";
         File app = new File("src\\test\\Res", appName);
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, emulatorName);
         cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
         cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        cap.setCapability("appWaitActivity", "com.sololearn.app.activities.GenericActivity");
-
-
-
+        cap.setCapability("appWaitActivity", intendedActivity);
 		/*
 		 * If the test fail because of the activity, try to check the log for the real activity and package name
 		 * and replace it in the above code
 		 * */
+
+
+
         AndroidDriver<AndroidElement> driver = null;
         try {
             driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            base.driver = driver;
         } catch (MalformedURLException e) {
             Assert.fail(e.getMessage());
         }
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        base.driver = driver;
 
     }
     //    After each scenario
