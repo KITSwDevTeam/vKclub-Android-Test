@@ -41,7 +41,7 @@ public class Hook extends BaseUtil{
         String emulatorName = "Device Name";
         String appName = "appName.apk";
         String intendedActivity = "";
-        File app = new File("src\\test\\Res", appName);
+        File app = new File("src/test/Res", appName);
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, emulatorName);
         cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
@@ -54,7 +54,7 @@ public class Hook extends BaseUtil{
 
 
 
-        AndroidDriver<AndroidElement> driver = null;
+        AndroidDriver<AndroidElement> driver;
         try {
             driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -72,10 +72,9 @@ public class Hook extends BaseUtil{
             System.out.println("The scenario " +scenario.getName()+" is failed");
         }
         /*
-        * Use close to terminate the app
+        * Use close to terminate the browser
         * Use quit to terminate the driver instance
         * */
-        base.driver.close();
         base.driver.quit();
         System.out.println("Terminated App");
     }
