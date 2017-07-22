@@ -72,8 +72,8 @@ public class Hook extends BaseUtil{
             System.out.println("The scenario " +scenario.getName()+" is failed");
         }
         /*
-        * Use close to terminate the browser
-        * Use quit to terminate the driver instance
+        * Use close() to terminate the browser
+        * Use quit() to terminate the driver instance
         * */
         base.driver.quit();
         System.out.println("Terminated App");
