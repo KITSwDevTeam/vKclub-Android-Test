@@ -4,7 +4,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 /**
- * Created by chhormchhatra on 7/19/17.
+ * Created by chhormchhatra from KEEN Virtual Company of KIT on 7/19/17.
  */
 
     @CucumberOptions(features = {"src/test/java/Features"}, format ={"json:target/androidTestReport.json", "html:target/androidTestReport-keen-report-html"} , glue = "Steps")

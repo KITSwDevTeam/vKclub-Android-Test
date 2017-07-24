@@ -6,9 +6,6 @@ import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.remote.MobileCapabilityType;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 
@@ -18,7 +15,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by chhormchhatra on 7/19/17.
+ * Created by chhormchhatra from KEEN Virtual Company of KIT on 7/19/17.
  */
 
 public class Hook extends BaseUtil{
@@ -43,11 +40,14 @@ public class Hook extends BaseUtil{
         String intendedActivity = "";
         File app = new File("src/test/Res", appName);
         DesiredCapabilities cap = new DesiredCapabilities();
-        cap.setCapability(MobileCapabilityType.DEVICE_NAME, emulatorName);
-        cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
-        cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+        cap.setCapability("automationName", "Appium");
+        cap.setCapability("platformName", "Android");
+        cap.setCapability("deviceName", emulatorName);
+        cap.setCapability("app", app.getAbsolutePath());
         cap.setCapability("appWaitActivity", intendedActivity);
+        cap.setCapability("noReset", false);
 		/*
+		 * More configuration, see https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/caps.md
 		 * If the test fail because of the activity, try to check the log for the real activity and package name
 		 * and replace it in the above code
 		 * */

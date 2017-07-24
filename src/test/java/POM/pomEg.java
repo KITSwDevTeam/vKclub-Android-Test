@@ -3,14 +3,13 @@ package POM;
 import io.appium.java_client.MobileDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by chhormchhatra on 7/19/17.
+ * Created by chhormchhatra from KEEN Virtual Company of KIT on 7/19/17.
  */
 
 public class pomEg {
@@ -25,7 +24,7 @@ public class pomEg {
     }
 
     @FindBy(xpath = "someXpath")
-    WebElement elementName;
+    AndroidElement elementName;
 
     public void actionButton() {
         elementName.click();
