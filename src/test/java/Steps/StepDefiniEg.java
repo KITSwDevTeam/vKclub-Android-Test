@@ -14,15 +14,16 @@ public class StepDefiniEg implements En {
     public StepDefiniEg(BaseUtil base) {
         this.base = base;
     }
-    /*
-     * TODO
-     * Make an object for each class in POM, to access the action and element in classes located at POM package
-     * Then, pass the base.driver to the constructor
-     * e.g. pomEg obj = new pomEg(base.driver);
-     * */
-    pomEg obj = new pomEg(base.driver);
+    
 
     public StepDefiniEg() {
+        /*
+         * TODO
+         * Make an object for each class in POM, to access the action and element in classes located at POM package
+         * Then, pass the base.driver to the constructor
+         * e.g. pomEg obj = new pomEg(base.driver);
+         * */
+        pomEg obj = new pomEg(base.driver);
         Given("^I get to do pre-requests here$", () -> {
             /*
             * Example to access methods in POM
