@@ -55,4 +55,4 @@ To get [maven-cucumber-reporting](https://mvnrepository.com/artifact/net.mastert
 - Run `mvn clean` to clean the previous test target folder
 - Run `mvn verify` to **automate the test**
 
-The result will be generated in `target/kit-keen-webTest-html/cucumber-html-reports`.**Nota Bene:** the `kit-keen-webTest-html` might be changed if you changed the folder name in the configuartion.
+The result will be generated in `target/kit-keen-androidTest-html/cucumber-html-reports`.**Nota Bene:** the `kit-keen-webTest-html` might be changed if you changed the folder name in the configuartion.
