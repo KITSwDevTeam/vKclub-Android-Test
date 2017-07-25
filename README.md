@@ -12,7 +12,8 @@ By the help of [maven-cucumber-reporting](https://mvnrepository.com/artifact/net
 ### Prerequisite
 This AndroidTest template use [Cucumber](https://cucumber.io/) framework with [Gherkin](https://cucumber.io/docs/reference) to get the advantages of `.feature` files.
 - If you are not familiar with Gherkin, please refer <https://cucumber.io/docs/reference> for language concepts and its syntax.
-- Check your **Java JDK**, by run `java -v` in command prompt(Windows) or terminal(macOS). If you could see the version of java, then it has been installed, otherwise, please install it based on your operating system.**Make Sure you have set `JAVA_HOME` to `jdk` folder and `jdk\bin` to `PATH` (refer [here](https://maven.apache.org/install.html)).
+- Check your **Java JDK**, by run `java -v` in command prompt(Windows) or terminal(macOS). If you could see the version of java, then it has been installed, otherwise, please install it based on your operating system.**Make Sure you have set `JAVA_HOME` to `jdk` folder and `jdk\bin` to `PATH` (refer [here](https://maven.apache.org/install.html)).**
+- For **macOS**, please install **XCODE** from AppStore first, then install **homebrew** by opening terminal and run `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`. Once the installation finished, run `brew install node`
 - Follow this [link](http://appium.io/slate/en/master/?ruby#additional-setup-for-android-app-testing) to set up your **environtment**
 - Follow this [link](http://appium.io/slate/en/master/?ruby#setup) to set up **appium server**.
 - Make sure that you have maven installed by run `mvn -v` in command prompt(Windows) or terminal(macOS). If you could see the version of maven, then it has been installed, otherwise, please install it based on your operating system. (refer [here](https://maven.apache.org/install.html))
