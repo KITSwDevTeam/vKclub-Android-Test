@@ -44,7 +44,7 @@
                             </goal>
                         </goals>
                         <configuration>
-                            <projectName>KEEN_Web_Testing</projectName>
+                            <projectName>KEEN_Android_Testing</projectName>
                             <outputDirectory>${project.build.directory}/kit-keen-webTest-html</outputDirectory>
                             <cucumberOutput>${project.build.directory}/webTestReport.json</cucumberOutput>
                         </configuration>
