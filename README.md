@@ -48,6 +48,7 @@ But Do not forget to
 **After this configuration, you now can define your `.feature` files as many as desired, and define the steps in `src\test\java\Steps` in many classes as prefered.**
 
 ### Automate TestCases
+Before you begin, open **terminal** or **windows commandline** and run `appium`. Then, you have to **start an emulator or a real device connection**.
 In `src\test\java\Runner\TestRunner.java`, the default set up is good to go already. *Right Click* and choose **Run TestRunner**. By doing this, **the test result will be generated automatically by cucumber-testng.**
 
 To get [maven-cucumber-reporting](https://mvnrepository.com/artifact/net.masterthought/maven-cucumber-reporting/0.0.2), you have to **run the test from command line(on Windows) or from terminal(on macOS)**.
