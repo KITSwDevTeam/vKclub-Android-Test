@@ -8,4 +8,4 @@ Feature: Feature_Name
     And I get to do some more pre-requests here
     When I perform some action here
     Then I get a result here
-# Refer to https://github.com/chhatrachhorm/WebTest for more info
+# Refer to https://github.com/chhatrachhorm/Androidest for more info
